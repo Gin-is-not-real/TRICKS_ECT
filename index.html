@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tricks</title>
+</head>
+<body>
+    <header>
+        <h1>Tricks !</h1>
+    </header>
+
+    <main>
+
+        <section id="section-js-loops">
+            <header id="header-js-loops">
+                <h2>Javascript - boucles</h2>
+            </header>
+
+
+                
+            <article>
+                <h3>Boucle "for"</h3>
+
+                <p><b>for </b>(i = <i>nbr_depart</i>; i < <i>nbr_tour</i>; i++) { <i>actions</i> }</p>
+                <p><b>pour</b>(<cite> soit i ma valeur de départ</cite>; <b> tant que</b> i < <cite>nombre de tours</cite>; <b> on incremente </b>i) { <i>actions</i> }</p>
+
+                <section class="example">
+                    <figure>
+                        <img src="media/js-for-0-10.png">
+                        <figcaption>La boucle <b>s'arrete à 9</b> car elle commence à 0. </figcaption>
+                    </figure>
+                    <input type="button" value="see in console" onclick=forLoop()>
+                </section>
+
+                <section>
+                    <h4>Si on voudrait afficher 1, 2, 3 .. 10, on écrirait: </h4>
+                </section>
+
+                <section class="example">
+                    <figure>
+                        <img src="media/js-for-1-10.png">
+                        <figcaption>La boucle commence bien à 1 et fini au bout de 10 tours. </figcaption>
+                    </figure>
+                    <input type="button" value="see in console" onclick=forLoop2()>
+                </section>
+
+                <section>
+                    <h4>On peut utiliser des variables comme valeurs de départ et nombre de tours: </h4>
+                </section>
+
+                <section class="example">
+                    <figure>
+                        <img src="media/js-for-variables.png">
+                        <figcaption>La boucle commence à 5 et fini au bout de 15 tours. </figcaption>
+                    </figure>
+                    <input type="button" value="see in console" onclick=forLoop3()>
+                </section>
+
+                <section>
+                    <h4>On peut boucler sur un array en passant i en index (array[i]) et récuperer la valeur contenue, et continuer ainsi jusqu'a la fin du tableau: </h4>
+                </section>
+
+                <section class="example">
+                    <figure>
+                        <img src="media/js-for-array.png">
+                        <figcaption>Tant que i est inferieur à la longueur du tableau, on peut récuperer la valeur contenue dans celui en passant i en index: <cite>array[i]</cite></figcaption>
+                    </figure>
+                    <input type="button" value="see in console" onclick=forLoopArray()>
+                </section>
+
+            </article>
+            
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+    <style type="text/css">
+        .example {
+            display: flex;
+            flex-direction: row;
+        }
+        input {
+            width: max-content;
+            height: max-content;
+        }
+    </style>
+</body>
+</html>
